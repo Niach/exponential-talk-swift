@@ -1,4 +1,4 @@
-# ExponentialTalk 0.2.1
+# ExponentialTalk 0.2.2
 
 eTalk for Swift: the call machine (the ring, the warm-up, the agent speaks
 first; fixture-locked by `voice-call.json`) and the Opus codec (PCM in,
@@ -8,7 +8,7 @@ app. Docs: **https://exponential.at/talk/**; the API:
 
 ```swift
 // Package.swift
-.package(url: "https://github.com/Niach/exponential-talk-swift", exact: "0.2.1")
+.package(url: "https://github.com/Niach/exponential-talk-swift", exact: "0.2.2")
 // target
 .product(name: "ExponentialTalk", package: "exponential-talk-swift")
 ```
@@ -20,7 +20,7 @@ let encoder = try TalkEncoder(rate: 16000, bitrate: 24000, lossPercent: 10)
 let packet = try encoder.encode(pcm: frame)  // one 20 ms frame of i16 PCM
 ```
 
-Kotlin: `at.exponential:etalk:0.2.1` on Maven Central. Licence: see
+Kotlin: `at.exponential:etalk:0.2.2` on Maven Central. Licence: see
 LICENSE and NOTICE. Generated from the Exponential monorepo
-(`apps/desktop/crates/etalk-ffi`, tag `etalk-v0.2.1`); issues and
+(`apps/desktop/crates/etalk-ffi`, tag `etalk-v0.2.2`); issues and
 changes go there.
